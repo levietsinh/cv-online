@@ -21,6 +21,11 @@
   font-family: "Poppins-Black";
   color: #0abead;
   cursor: pointer;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 .header .logo:hover {
   color: #0abead50;
@@ -40,6 +45,11 @@
   font-family: "Poppins-Medium";
   font-size: 1rem;
   cursor: pointer;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 .header .header__nav ul li:hover {
   color: #0abead;
@@ -65,13 +75,33 @@
 
 .style-scroll .header__nav ul li {
   color: #fff;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 .style-scroll .logo {
   color: #fff;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 .style-scroll .logo:hover {
-  color: #ffffff90;
+  color: #ffffff95;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
-.header .header__nav ul li:hover {
-  color: #ffffff90;
+.style-scroll .header__nav ul li:hover {
+  color: #ffffff95;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
