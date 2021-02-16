@@ -4,8 +4,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Viet Sinh-CV</title>
+  <link rel="icon" type="image/png" href="./images/avatar.jpg">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-  LVS-CV
+  <header class="header">
+    <div class="logo">LVS</div>
+    <div class="header__nav">
+      <ul>
+        <li>Home</li>
+        <li>About me</li>
+        <li onclick="scrollToResume()">Resume</li>
+        <li onclick="scrollToContact()">Contact me</li>
+      </ul>
+    </div>
+  </header>
+  <div class="content">
+    <section class="content-1">
+      <div class="left">
+        <div class="hello">Hello, I'm <span>Le Viet Sinh</span></div>
+        <div class="career">Front-end Developer</div>
+        <div class="buttons">
+          <button class="btn primary-btn" onclick="scrollToContact()">Hire me</button>
+          <button class="btn secondary-btn" onclick="scrollToResume()">Watch my Resume</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="avatar-border">
+          <div class="avatar">
+            <img src="./images/avatar.jpg" alt="Sinh's Avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-2">
+      <div class="shadow">
+        <div class="shadow-top"></div>
+      </div>
+      <div class="resume-contain">
+        <div class="heading">Resume</div>
+        <div class="heading-border"></div>
+        <div class="resume-content">
+          <div class="resume-left">
+            <ul>
+              <li class="resume-item active" onclick="selectItem(0)">
+                <img src="./images/user-graduate.svg" alt="Educaiton icon">
+                <span>Education</span>
+              </li>
+              <li class="resume-item" onclick="selectItem(1)">
+                <img src="./images/history icon.svg" alt="Hisory icon">
+                <span>Work history</span>
+              </li>
+              <li class="resume-item" onclick="selectItem(2)">
+                <img src="./images/Icon awesome-laptop-code.svg" alt="Skill icon">
+                <span>Programming Skill</span>
+              </li>
+              <li class="resume-item" onclick="selectItem(3)">
+                <img src="./images/Icon awesome-laptop-code.svg" alt="Skill icon">
+                <span>Other</span>
+              </li>
+            </ul>
+          </div>
+          <div class="resume-right">
+            <div class="resume-body education show">
+              <ul>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Danang University of Science and Technology</div>
+                  </div>
+                  <div class="description">
+                    Graduated with major: Electronics and Telecommunications Engineering <br>
+                    Degree classification: Very good</div>
+                  </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Foreign language</div>
+                  </div>
+                  <div class="description">English B1</div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-body work-history">
+              <ul>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Telecommunications Designer-Viettel Consultant and Design Join Stock Comnany</div>
+                    <div class="time">
+                      <span>2019</span>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>Designed optic fiber transmission lines between BTSs.</li>
+                      <li>Designed broadband transmission network-GPON.</li>
+                      <li>Completed design documents, surveyed to design the optic fiber system and Base Transceiver Stations.</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Madison Technologies Vietnam Join Stock Company</div>
+                    <div class="time">
+                      <span>2019-now</span>
+                    </div>
+                  </div>
+                  <div class="description">Front-end Developer</div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-body skill">
+              <ul>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      HTML
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress html-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      CSS
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress css-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      Javascript/Jquery
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress js-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      C/C++
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress c-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      AngularJS
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress angular-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title" >
+                      VueJS/NuxtJS
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="item-progress vue-progress"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-body other">
+              <ul>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Working skills</div>
+                  </div>
+                  <div class="description">
+                    Can use applications: Visual Studio, Visual Studio Code, Microsoft Office (Word, Excel, PowerPoint), SourceTree, DevC++, …
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Characteristic</div>
+                  </div>
+                  <div class="description">
+                    Hard-working, honest, thoughtful, responsible, withstand work pressure, eager to learn, a good listener and share…
+                  </div>
+                </li>
+                <li>
+                  <div class="resume-heading">
+                    <div class="heading-title">Hobbies</div>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>Reading news</li>
+                      <li>Traveling</li>
+                      <li>Volunteering</li>
+                      <li>Listen to music</li>
+                      <li>Waching movie</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow">
+        <div class="shadow-bottom"></div>
+      </div>
+    </section>
+    <section class="content-3">
+        <div class="heading">Contact me</div>
+        <div class="heading-border"></div>
+        <div class="content">
+          <ul class="left">
+            <li class="item">Address</li>
+            <li class="item">Email</li>
+            <li class="item">Phone Number</li>
+          </ul>
+          <div class="center">
+            <div class="item">:</div>
+            <div class="item">:</div>
+            <div class="item">:</div>
+          </div>
+          <div class="right">
+            <div class="item">1579 Tran Thu Do, Dien Nam Dong, Dien Ban, Quang Nam</div>
+            <div class="item">levietsinh201194@gmail.com</div>
+            <div class="item">0966384952</div> 
+          </div>
+        </div>
+        <div class="social-media">
+          <div class="social-title">Social media</div>
+          <div class="icon">
+            <a href="https://www.facebook.com/levietsinh201194/" target="_blank">
+              <img src="./images/icon-fb.svg" alt="Facebook">
+            </a>
+            <a href="https://join.skype.com/invite/mT9WddZxuMaD" target="_blank">
+              <img src="./images/skype-icon.svg" alt="Skype">
+            </a>
+            <a href="http://zaloapp.com/qr/p/19h58eheralmb" target="_blank">
+              <img src="./images/zalo-icon.svg" alt="Zalo">
+            </a>
+          </div>
+    </div>
+    </section>
+  </div>
+  <script src="./js/home.js"></script>
 </body>
 </html>

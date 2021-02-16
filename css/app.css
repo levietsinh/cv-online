@@ -1,0 +1,64 @@
+@import "../css/reset.css";
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../fonts/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+body {
+  font-family: "Poppins-Regular";
+  color: #333;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.btn {
+  padding: 16px 64px;
+  font-size: 1rem;
+  font-family: "Poppins-SemiBold";
+  color: #fff;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.btn:hover {
+  padding: 14px 62px;
+}
+.primary-btn {
+  background-color: #19d8c5;
+  box-shadow: 0px 16px 30px 0 #0bbead40;
+}
+.primary-btn:hover {
+  color: #08f5dd;
+  background-color: #fff;
+  border: 2px solid #08f5dd;
+}
+.secondary-btn {
+  background-color: #f77707;
+  box-shadow: 0px 16px 30px 0 #f57f1715;
+}
+.secondary-btn:hover {
+  color: #f57f17;
+  background-color: #fff;
+  border: 2px solid #f57f17;
+}

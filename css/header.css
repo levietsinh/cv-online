@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+  justify-content: space-between;
+  box-shadow: 0px 3px 58px 0px #04c3ff16;
+}
+.header .logo {
+  font-size: 78px;
+  font-family: "Poppins-Black";
+  color: #0abead;
+  cursor: pointer;
+}
+.header .logo:hover {
+  color: #0abead50;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.header .header__nav {
+}
+.header .header__nav ul {
+  list-style: none;
+  display: flex;
+}
+.header .header__nav ul li {
+  font-family: "Poppins-Medium";
+  font-size: 1rem;
+  cursor: pointer;
+}
+.header .header__nav ul li:hover {
+  color: #0abead;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.header .header__nav ul li + li {
+  margin-left: 24px;
+}
