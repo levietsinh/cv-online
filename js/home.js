@@ -5,6 +5,9 @@ var content3 = document.querySelector('.content-3');
 var header = document.querySelector('.header');
 var topOfResume = content2.offsetTop - 89;
 var topOfContact = content3.offsetTop - 89;
+var urlHash = location.hash;
+
+
 window.addEventListener('scroll', function () {
   if (window.scrollY > 0) {
     header.classList.add('style-scroll');
@@ -32,3 +35,11 @@ function scrollToContact() {
   window.scroll({ top: topOfContact, behavior: "smooth" });
 
 }
+
+
+if (urlHash === '#resume') {
+  scrollToResume();
+} 
+if (urlHash === '#contact') {
+  scrollToContact();
+} 
