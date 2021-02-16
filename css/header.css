@@ -41,8 +41,11 @@
   list-style: none;
   display: flex;
 }
-.header .header__nav ul li {
+.header .header__nav ul li,
+.header .header__nav ul li a {
   font-family: "Poppins-Medium";
+  text-decoration: none;
+  color: #000;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.8s;
@@ -51,7 +54,9 @@
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
-.header .header__nav ul li:hover {
+.header .header__nav ul li:hover,
+.header .header__nav ul li a:hover,
+.header .header__nav ul li.selected {
   color: #0abead;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -73,7 +78,8 @@
   -o-transition: 0.8s;
 }
 
-.style-scroll .header__nav ul li {
+.style-scroll .header__nav ul li,
+.style-scroll .header__nav ul li a {
   color: #fff;
   transition: 0.8s;
   -webkit-transition: 0.8s;
@@ -90,15 +96,17 @@
   -o-transition: 0.8s;
 }
 .style-scroll .logo:hover {
-  color: #ffffff95;
+  color: #000;
   transition: 0.8s;
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
-.style-scroll .header__nav ul li:hover {
-  color: #ffffff95;
+.style-scroll .header__nav ul li:hover,
+.style-scroll .header__nav ul li a:hover,
+.style-scroll .header__nav ul li.selected {
+  color: #000;
   transition: 0.8s;
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
