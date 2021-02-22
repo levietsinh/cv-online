@@ -16,6 +16,9 @@
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
+.header .close-btn {
+  display: none;
+}
 .header .logo {
   font-size: 78px;
   font-family: "Poppins-Black";
@@ -112,4 +115,76 @@
   -moz-transition: 0.8s;
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
+}
+
+.header-mobile {
+  display: none;
+}
+/**Responsive */
+@media screen and (max-width: 767px) {
+  .header-mobile {
+    width: 100vw;
+    display: block;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 3px 58px 0px #04c3ff16;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1024;
+  }
+  .header-mobile.style-scroll-mobile {
+    background-color: #0cbfae;
+    box-shadow: 0px 3px 58px 0px #ffffff;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+  }
+  .header-mobile img {
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 4px;
+  }
+  .header {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    padding: 0;
+    position: relative;
+  }
+  .header .close-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 4px;
+  }
+  .header .close-btn img {
+    width: 40px;
+  }
+  .header .logo {
+    text-align: center;
+  }
+  .header .header__nav {
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .header__nav ul {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .header .header__nav ul li + li {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .header .header__nav ul li,
+  .header .header__nav ul li a {
+    font-size: 24px;
+  }
 }

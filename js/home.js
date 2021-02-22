@@ -2,19 +2,13 @@ var resumeNavItem = document.querySelectorAll('.resume-item');
 var resumeContentItem = document.querySelectorAll('.resume-body');
 var content2 = document.querySelector('.content-2');
 var content3 = document.querySelector('.content-3');
-var header = document.querySelector('.header');
+
 var topOfResume = content2.offsetTop - 89;
 var topOfContact = content3.offsetTop - 89;
 var urlHash = location.hash;
 var navItem = document.querySelectorAll('.header__nav ul li');
 
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 0) {
-    header.classList.add('style-scroll');
-  } else {
-    header.classList.remove('style-scroll');
-  }
-})
+
 function selectItem(index) {
   for (let i = 0; i < resumeNavItem.length; i++) {
     if (index === i) {

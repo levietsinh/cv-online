@@ -1,5 +1,7 @@
 .main-content {
   margin-top: 89px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .main-content .content-1 {
   height: calc(90vh - 89px);

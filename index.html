@@ -11,6 +11,9 @@
 </head>
 <body>
   <header class="header">
+    <div class="close-btn">
+      <img src="./images/cancel-icon.png" alt="Close icon" onclick="closeMobileMenu()">
+    </div>
     <div class="logo">LVS</div>
     <div class="header__nav">
       <ul>
@@ -22,6 +25,9 @@
         <li onclick="scrollToContact()">Contact me</li>
       </ul>
     </div>
+  </header>
+  <header class="header-mobile">
+    <img src="./images/threelines.webp" onclick="openMobileMenu()">
   </header>
   <div class="main-content">
     <section class="content-1">
@@ -257,6 +263,7 @@
     </div>
     </section>
   </div>
+  <script src="./js/header.js"></script>
   <script src="./js/home.js"></script>
 </body>
 </html>
