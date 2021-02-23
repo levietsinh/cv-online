@@ -62,3 +62,9 @@ body {
   background-color: #fff;
   border: 2px solid #f57f17;
 }
+
+@media screen and (max-width: 767px) {
+  .btn {
+    padding: 12px 40px;
+  }
+}

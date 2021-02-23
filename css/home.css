@@ -389,21 +389,21 @@
   width: 160px;
   font-family: "Poppins-SemiBold";
 }
-.content-3 .content .left .item + .item {
-  margin-top: 20px;
-}
+
 .content-3 .content .center {
   width: 30px;
 }
-.content-3 .content .center .item + .item {
+.content-3 .content ul {
+  list-style: circle;
+  padding: 0;
+}
+.content-3 .content ul li {
+  display: flex;
+}
+.content-3 .content ul li + li {
   margin-top: 20px;
 }
-.content-3 .content .right {
-  /* width: calc(100% - 200px); */
-}
-.content-3 .content .right .item + .item {
-  margin-top: 20px;
-}
+
 .content-3 .social-media {
   text-align: center;
 }
