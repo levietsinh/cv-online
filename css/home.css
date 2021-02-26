@@ -142,6 +142,11 @@
   display: flex;
   /* align-items: center; */
 }
+.resume-left .close {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
 .resume-left ul {
   margin: 0;
   padding: 0;
@@ -200,6 +205,11 @@
   width: calc(100% - 370px);
   height: 100%;
   overflow-y: auto;
+}
+.resume-left .previous {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 .resume-body {
   opacity: 0;

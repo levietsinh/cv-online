@@ -57,6 +57,10 @@
         <div class="heading-border"></div>
         <div class="resume-content">
           <div class="resume-left">
+            <div class="close">
+              <span>Watch content</span>
+              <img src="./images/next.png" alt="Watch resume content" onclick="showResumeContent()">
+            </div>
             <ul>
               <li class="resume-item active" onclick="selectItem(0)">
                 <img src="./images/user-graduate.svg" alt="Educaiton icon">
@@ -76,7 +80,11 @@
               </li>
             </ul>
           </div>
-          <div class="resume-right">
+          <div class="resume-right hide">
+            <div class="previous" onclick="showResumeMenu()">
+              <img src="./images/previous.png" alt="Show resume menu" >
+              <span>Resume menu</span>
+            </div>
             <div class="resume-body education show">
               <ul>
                 <li>
