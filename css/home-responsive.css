@@ -61,7 +61,7 @@
     visibility: visible;
     position: absolute;
     top: 8px;
-    right: 4px;
+    right: 12px;
     align-items: center;
   }
   .resume-left .close img {
@@ -98,7 +98,12 @@
     animation: hide-resume 1s forwards;
     -webkit-animation: hide-resume 1s forwards;
   }
-
+  .resume-body ul {
+    width: 100%;
+  }
+  .resume-body ul li {
+    width: 100%;
+  }
   .content-2 .shadow {
     height: 5vh;
   }
