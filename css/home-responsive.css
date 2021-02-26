@@ -43,7 +43,7 @@
     padding: 0 5vw;
   }
   .resume-content {
-    width: 100%;
+    width: calc(100vw - 10vw);
     position: relative;
     overflow: hidden;
   }
@@ -98,9 +98,15 @@
     animation: hide-resume 1s forwards;
     -webkit-animation: hide-resume 1s forwards;
   }
-  .resume-body ul {
+  .resume-body {
     width: 100%;
   }
+  /* .resume-body ul {
+    width: 100%;
+  }
+  .resume-body.skill ul {
+    width: calc(100% - 14px);
+  } */
   .resume-body ul li {
     width: 100%;
   }
