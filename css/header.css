@@ -147,7 +147,7 @@
     width: 40px;
     position: fixed;
     top: 10px;
-    right: 4px;
+    left: 4px;
   }
   .header {
     height: 100vh;

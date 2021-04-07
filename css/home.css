@@ -206,6 +206,28 @@
   height: 100%;
   overflow-y: auto;
 }
+.resume-right::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.resume-right::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  border-radius: 8px;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+/* Handle */
+.resume-right::-webkit-scrollbar-thumb {
+  height: 42px;
+  background: #0cbfae;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 .resume-right .previous {
   display: none;
   opacity: 0;
@@ -229,6 +251,11 @@
 }
 .resume-body ul li {
   line-height: calc(24 / 16);
+}
+.resume-body ul li .sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 16px;
 }
 .resume-body ul li + li {
   margin-top: 20px;
@@ -272,7 +299,7 @@
     margin-left: -100%;
   }
   to {
-    margin-left: -18%;
+    margin-left: -10%;
   }
 }
 .css-progress {
@@ -284,7 +311,7 @@
     margin-left: -100%;
   }
   to {
-    margin-left: -22%;
+    margin-left: -13%;
   }
 }
 .js-progress {
@@ -333,6 +360,18 @@
   }
   to {
     margin-left: -30%;
+  }
+}
+.react-progress {
+  animation: react-level 0.6s forwards;
+  -webkit-animation: react-level 0.6s forwards;
+}
+@-webkit-keyframes react-level {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: -62%;
   }
 }
 .resume-body .time {

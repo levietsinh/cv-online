@@ -1,5 +1,44 @@
-.main-content {
-  margin-top: 150px;
-  /* margin-top: 89px; */
+.container {
+  margin-top: 90px;
   text-align: center;
+}
+.about {
+  padding: 0 10vw;
+  padding-top: 90px;
+}
+.about__title {
+  font-size: 48px;
+  font-family: "Poppins-Bold";
+  color: #0abead;
+  margin-bottom: 28px;
+}
+.about__border {
+  border-top: 2px solid #0abead;
+  position: relative;
+  margin-bottom: 70px;
+}
+.about__border::after {
+  content: "";
+  height: 10px;
+  width: 40px;
+  position: absolute;
+  top: -6px;
+  left: calc(50% - 20px);
+  background-color: #0abead;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.about__content {
+  display: flex;
+}
+.about__img {
+  width: 50%;
+}
+.about__img img {
+  width: 100%;
+  filter: grayscale(70%);
+  -webkit-filter: grayscale(70%);
 }
