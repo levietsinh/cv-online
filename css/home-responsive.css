@@ -96,6 +96,7 @@
     left: 0px;
     align-items: center;
   }
+
   .resume-right .previous img {
     width: 32px;
     margin-right: 8px;
@@ -110,6 +111,13 @@
   }
   .resume-body {
     width: 100%;
+  }
+  .resume-body .resume-jobs-space {
+    display: block;
+  }
+  .resume-body .resume-jobs-space .time {
+    margin-left: 0;
+    text-align: center;
   }
   /* .resume-body ul {
     width: 100%;
@@ -162,6 +170,22 @@
   }
   to {
     top: 0;
+  }
+}
+@keyframes show-resume {
+  from {
+    top: calc(-100% - 36px);
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes hide-resume {
+  from {
+    top: 0;
+  }
+  to {
+    top: calc(-100% - 36px);
   }
 }
 @-webkit-keyframes hide-resume {

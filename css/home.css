@@ -244,7 +244,7 @@
   display: block;
 }
 .resume-body ul {
-  padding-left: 14px;
+  padding: 12px;
 }
 .resume-body ul li::marker {
   color: #0abead;
@@ -291,8 +291,8 @@
   -o-border-radius: 15px;
 }
 .html-progress {
-  animation: html-level 0.6s forwards;
-  -webkit-animation: html-level 0.6s forwards;
+  animation: html-level 1s forwards;
+  -webkit-animation: html-level 1s forwards;
 }
 @-webkit-keyframes html-level {
   from {
@@ -303,8 +303,8 @@
   }
 }
 .css-progress {
-  animation: css-level 0.6s forwards;
-  -webkit-animation: css-level 0.6s forwards;
+  animation: css-level 1s forwards;
+  -webkit-animation: css-level 1s forwards;
 }
 @-webkit-keyframes css-level {
   from {
@@ -315,8 +315,8 @@
   }
 }
 .js-progress {
-  animation: js-level 0.6s forwards;
-  -webkit-animation: js-level 0.6s forwards;
+  animation: js-level 1s forwards;
+  -webkit-animation: js-level 1s forwards;
 }
 @-webkit-keyframes js-level {
   from {
@@ -327,8 +327,8 @@
   }
 }
 .c-progress {
-  animation: c-level 0.6s forwards;
-  -webkit-animation: c-level 0.6s forwards;
+  animation: c-level 1s forwards;
+  -webkit-animation: c-level 1s forwards;
 }
 @-webkit-keyframes c-level {
   from {
@@ -339,8 +339,8 @@
   }
 }
 .angular-progress {
-  animation: angular-level 0.6s forwards;
-  -webkit-animation: angular-level 0.6s forwards;
+  animation: angular-level 1s forwards;
+  -webkit-animation: angular-level 1s forwards;
 }
 @-webkit-keyframes angular-level {
   from {
@@ -351,8 +351,8 @@
   }
 }
 .vue-progress {
-  animation: vue-level 0.6s forwards;
-  -webkit-animation: vue-level 0.6s forwards;
+  animation: vue-level 1s forwards;
+  -webkit-animation: vue-level 1s forwards;
 }
 @-webkit-keyframes vue-level {
   from {
@@ -363,8 +363,8 @@
   }
 }
 .react-progress {
-  animation: react-level 0.6s forwards;
-  -webkit-animation: react-level 0.6s forwards;
+  animation: react-level 1s forwards;
+  -webkit-animation: react-level 1s forwards;
 }
 @-webkit-keyframes react-level {
   from {

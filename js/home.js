@@ -4,7 +4,6 @@
 var resumeNavItem = document.querySelectorAll('.resume-item');
 var resumeContentItem = document.querySelectorAll('.resume-body');
 var resumeRight = document.querySelector('.resume-right');
-
 function isMobile() {
   if (window.innerWidth > 767) return false;
   else return true;
