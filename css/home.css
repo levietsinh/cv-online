@@ -18,6 +18,12 @@
 .main-content .content-1 .left {
   margin-right: 5vh;
 }
+.marquee {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0 0 black;
+}
 .main-content .content-1 .left .hello {
   font-size: 28px;
   font-family: "Poppins-SemiBold";
