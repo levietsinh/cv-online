@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .main-content {
   margin-top: 89px;
   width: 100vw;
@@ -353,7 +357,7 @@
     margin-left: -100%;
   }
   to {
-    margin-left: -50%;
+    margin-left: -68%;
   }
 }
 .vue-progress {
@@ -365,7 +369,7 @@
     margin-left: -100%;
   }
   to {
-    margin-left: -30%;
+    margin-left: -28%;
   }
 }
 .react-progress {
@@ -377,7 +381,7 @@
     margin-left: -100%;
   }
   to {
-    margin-left: -62%;
+    margin-left: -50%;
   }
 }
 .resume-body .time {
