@@ -42,3 +42,76 @@
   filter: grayscale(70%);
   -webkit-filter: grayscale(70%);
 }
+.project-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 6%;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+.project-item:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.project-item:hover .project-icon {
+  animation: retateIcon 1.5s ease;
+  -webkit-animation: retateIcon 1.5s ease;
+}
+@-webkit-keyframes retateIcon {
+  from {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
+.project-item--red {
+  box-shadow: 0 0 12px 0px #dc3545;
+}
+.project-item--yellow {
+  box-shadow: 0 0 12px 0 #ffc107;
+}
+.project-item--blue {
+  box-shadow: 0 0 12px 0 #17a2b8;
+}
+.project-icon {
+  width: 22%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.project-icon--loading {
+  color: #fff;
+}
+.project-name {
+  font-size: 24px;
+  font-family: "Poppins-Bold";
+  color: #fff;
+  margin: 16px 0;
+}
+.project-description {
+  color: #fff;
+  font-size: 16px;
+}

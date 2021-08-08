@@ -6,10 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./images/avatar.jpg">
   <title>About-Le Viet Sinh</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/app.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/home-responsive.css">
   <link rel="stylesheet" href="./css/about.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
@@ -34,17 +43,36 @@
   </header>
   <div class="container">
     <div class="about">
-      <div class="about__title">About me</div>
+      <div class="about__title">Personal projects</div>
       <div class="about__border"></div>
-      <div class="about__contain">
-        Updating...
-        <div class="about__img">
-          <!-- <img src="./images/about2.jpg" alt="About image"> -->
+    </div>
+    <div class="projects row">
+      <div class="col-md-4 col-sm-6 col-12">
+        <a 
+          href="https://levietsinh.github.io/weather-project/" 
+          class="project-item project-item--red bg-danger" 
+          target="_blank"
+        >
+          <img class="project-icon" src="./images/cloudy.png" alt="weather">
+          <div class="project-name">Today's weather</div>
+          <div class="project-description">You can quickly view weather information of popular areas such as: Danang, Hanoi, Ho Chi Minh city, Dalat, Sapa...</div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="project-item project-item--yellow bg-warning">
+          <i class="fa fa-spinner fa-pulse fa-3x fa-fw project-icon--loading"></i>
+          <div class="project-name">Comming soon</div>
         </div>
-        <div class="about__content"></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="project-item project-item--blue bg-info">
+          <i class="fa fa-spinner fa-pulse fa-3x fa-fw project-icon--loading"></i>
+          <div class="project-name">Comming soon</div>
+        </div>
       </div>
     </div>
   </div>
+
   <script src="./js/header.js"></script>
   <script src="./js/about.js"></script>
 </body>
