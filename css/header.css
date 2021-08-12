@@ -20,6 +20,8 @@
   display: none;
 }
 .header .logo {
+  /* -webkit-box-reflect: below -60px linear-gradient(transparent, rgba(0, 0, 0, 0.2)); */
+  position: relative;
   font-size: 78px;
   font-family: "Poppins-Black";
   color: #0abead;
@@ -30,7 +32,60 @@
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
+.header .logo h1,
+.header .logo h2 {
+  font-size: 100%;
+  margin: 0;
+}
+.header .logo h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #0abead;
+}
+.header .logo h1:nth-child(2) {
+  position: absolute;
+  top: 0;
+  animation: waterEffect 4s linear infinite;
+  -webkit-animation: waterEffect 4s linear infinite;
+}
+@-webkit-keyframes waterEffect {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 62%,
+      11% 48%,
+      20% 41%,
+      32% 41%,
+      43% 46%,
+      53% 56%,
+      66% 67%,
+      75% 69%,
+      85% 65%,
+      90% 59%,
+      100% 42%,
+      100% 100%,
+      0 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 43%,
+      6% 56%,
+      16% 67%,
+      29% 71%,
+      42% 66%,
+      53% 56%,
+      61% 48%,
+      71% 41%,
+      83% 41%,
+      93% 49%,
+      100% 64%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
 .header .logo:hover {
+  text-decoration: unset;
   color: #0abead50;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -41,6 +96,7 @@
 .header .header__nav {
 }
 .header .header__nav ul {
+  margin: 0;
   list-style: none;
   display: flex;
 }
@@ -97,6 +153,9 @@
   -moz-transition: 0.8s;
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
+}
+.style-scroll .logo h1:nth-child(1) {
+  -webkit-text-stroke: 2px #fff;
 }
 .style-scroll .logo:hover {
   color: #000;
@@ -168,14 +227,24 @@
     animation: hide-menu 1s forwards;
     -webkit-animation: hide-menu 1s forwards;
   }
-  /* .header .logo:hover {
-    color: #0abead;
-  } */
+  .header .logo h1:nth-child(1) {
+    -webkit-text-stroke: 2px #fff;
+  }
+  .header .logo h1:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
   .header .close-btn {
     display: block;
     position: absolute;
     top: 10px;
     right: 4px;
+    z-index: 1000;
   }
   .header .close-btn img {
     width: 40px;
