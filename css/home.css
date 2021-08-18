@@ -477,6 +477,33 @@ body::-webkit-scrollbar {
 .content-3 .social-media a {
   text-decoration: none;
 }
+.content-3 .social-media a i {
+  font-size: 40px;
+}
 .content-3 .social-media a + a {
   margin-left: 24px;
+}
+
+.content-3 .social-media img:hover,
+.content-3 .social-media a i:hover {
+  animation: swingAnimation 1s ease;
+  -webkit-animation: swingAnimation 1s ease;
+}
+
+@keyframes swingAnimation {
+  0%,
+  100% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
