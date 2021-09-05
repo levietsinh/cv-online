@@ -71,6 +71,10 @@
   animation: scaleIcon 4s ease infinite;
   -webkit-animation: scaleIcon 4s ease infinite;
 }
+.project-item:hover .project-icon-spin {
+  animation: spinIcon 4s forwards infinite;
+  -webkit-animation: spinIcon 4s forwards infinite;
+}
 @-webkit-keyframes scaleIcon {
   0% {
     transform: scale(1);
@@ -92,6 +96,29 @@
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+  }
+}
+@-webkit-keyframes spinIcon {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(360deg);
+    -webkit-transform: scale(360deg);
+    -moz-transform: scale(360deg);
+    -ms-transform: scale(360deg);
+    -o-transform: scale(360deg);
   }
 }
 .project-item--red {
